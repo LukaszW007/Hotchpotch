@@ -9,4 +9,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pl.lukaszwiszniewski.hotchpotch.ActionActivity">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/linearLayout">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentWebView"
+        class="pl.lukaszwiszniewski.hotchpotch.FragmentWebView"
+        tools:layout="@layout/fragment_fragment_web_view"
+        ></fragment>
+    </FrameLayout>
 </RelativeLayout>

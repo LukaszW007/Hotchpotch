@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Hotchpotch"
+        android:text="@string/hotchpotch"
         android:id="@+id/textViewTitle"
         android:layout_marginTop="25dp"
         />
@@ -40,7 +40,7 @@
             <Switch
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login/Register"
+                android:text="@string/login_register"
                 android:id="@+id/switchLoginRegister"
                 android:checked="false" />
 
@@ -54,8 +54,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_login"
                     android:id="@+id/editTextLogin"
-                    android:maxLines="1"
-                    android:singleLine="true"        />
+                    android:maxLines="1" />
             </android.support.design.widget.TextInputLayout>
 
 
@@ -67,9 +66,7 @@
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/editTextPassword"
-
                     android:maxLines="1"
-                    android:singleLine="true"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
@@ -82,7 +79,7 @@
             <Button
                 android:id="@+id/buttonLogin"
 
-                android:text="Login"
+                android:text="@string/login"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"
 
@@ -93,8 +90,6 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="5"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_marginBottom="67dp" />
         </LinearLayout>
     </ScrollView>
