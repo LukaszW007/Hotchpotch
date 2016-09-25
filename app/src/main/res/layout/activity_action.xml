@@ -18,6 +18,50 @@
         android:layout_alignParentStart="true"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="WebView"
+                android:textSize="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonWebView" />
+
+            <Button
+                android:text="Toasts"
+                android:textSize="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonToasts" />
+
+            <Button
+                android:text="Animation"
+                android:textSize="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonAnimation" />
+
+            <Button
+                android:text="background"
+                android:textSize="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonBackground" />
+
+            <Button
+                android:text="log out"
+                android:textSize="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonLogOut" />
+        </LinearLayout>
     </LinearLayout>
 
     <FrameLayout
@@ -26,12 +70,6 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/linearLayout">
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragmentWebView"
-        class="pl.lukaszwiszniewski.hotchpotch.FragmentWebView"
-        tools:layout="@layout/fragment_fragment_web_view"
-        ></fragment>
+
     </FrameLayout>
 </RelativeLayout>

@@ -6,12 +6,14 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class FragmentWebView extends Fragment {
+    private WebView webView;
 
 
     public FragmentWebView() {
@@ -23,7 +25,15 @@ public class FragmentWebView extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment_web_view, container, false);
+        View view= inflater.inflate(R.layout.fragment_fragment_web_view, container, false);
+        webView = (WebView) view.findViewById(R.id.WebView);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setAllowContentAccess(true);
+        webView.loadUrl("http://projekt.techloft.pl/akademiakodu/");
+
+        return view;
     }
+
+
 
 }
