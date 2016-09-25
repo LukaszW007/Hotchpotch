@@ -42,7 +42,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/login_register"
                 android:id="@+id/switchLoginRegister"
-                android:checked="false" />
+
+                android:checked="false"
+                android:textOn="@string/register"
+                android:textOff="@string/login" />
 
 
             <android.support.design.widget.TextInputLayout

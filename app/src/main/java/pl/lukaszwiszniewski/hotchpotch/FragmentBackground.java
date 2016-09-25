@@ -29,6 +29,8 @@ public class FragmentBackground extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_background, container, false);
+
+        layout = (FrameLayout) v.findViewById(R.id.layout);
         final AnimationDrawable animation = (AnimationDrawable) layout.getBackground();
 
         Handler handler = new Handler(new Handler.Callback(){
@@ -46,7 +48,7 @@ public class FragmentBackground extends Fragment {
                 }return false;
             }
         });
-        handler.sendEmptyMessageDelayed(1,5000);
+        handler.sendEmptyMessageDelayed(1,1000);
         handler.sendEmptyMessageDelayed(2,15000);
 
         return v;
