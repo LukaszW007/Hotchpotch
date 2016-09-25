@@ -11,7 +11,8 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView"
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="185dp"
         android:background="@mipmap/ic_launcher" />
 </RelativeLayout>

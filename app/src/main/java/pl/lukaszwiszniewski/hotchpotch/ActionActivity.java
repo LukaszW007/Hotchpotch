@@ -35,20 +35,6 @@ public class ActionActivity extends AppCompatActivity implements View.OnClickLis
         FragmentTransaction ft = fragmentManager.beginTransaction();
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
 
-
-
-      /*  if (savedInstanceState == null) {
-
-
-            FragmentManager fragmentManager = getFragmentManager();
-
-            FragmentTransaction ft = fragmentManager.beginTransaction();
-            ft.add(R.id.frameLayout, new FragmentWebView());
-            ft.commit();
-
-            //FragmentWebView fragmentWebView = (FragmentWebView) getFragmentManager().findFragmentById(R.id.fragmentWebView);
-
-        }*/
     }
 
 
